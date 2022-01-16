@@ -1,0 +1,16 @@
+.main {
+    background-color: #ecdbec;
+    padding-bottom: 100px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+

@@ -1,0 +1,18 @@
+.top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(66, 66, 196);
+    color: white;
+}
+
+.navright {
+    margin-left: auto;
+    /* width: 200px; */
+    text-align: right;
+    
+}
+
+.btn {
+    margin-left: 1em;
+}
