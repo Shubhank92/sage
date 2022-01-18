@@ -14,6 +14,18 @@ import Footer from './components/footer.js';
 class App extends Component{
   constructor() {
     super()
+    this.state = {
+      selectedService : '',
+      solution: ''
+    }
+  }
+
+  selcName = (e) => {
+    this.setState( { selectedService: e } );
+  }
+
+  onSolSelection = (e) => {
+    this.setState( { solution: e } );
   }
 
   render() {
@@ -22,8 +34,8 @@ class App extends Component{
         <Nav />
         <Intro />
         <TopInfo />
-        <Service />
-        <Solutions />
+        <Service selcName={this.selcName} selectedService={this.state.selectedService}/>
+        <Solutions solution={this.state.solution} onSolSelection={this.onSolSelection}/>
         <Partners />
         <Popular />
         <Footer />
